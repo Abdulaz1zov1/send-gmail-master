@@ -1,0 +1,17 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "This is simple email sender app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Ibrat Tillaberdiyev <tilllaberdiyevibrat@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.2"
+  }
+}

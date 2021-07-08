@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Email</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+</head>
+<style>
+    body{
+        background-color: whitesmoke;
+    }
+</style>
+
+<body>
+    <div class="container text-center mt-3">
+        <form action="/" method="POST">
+            <h3>Email sender</h3>
+            <label for="" class="form-control mb-3 mt-3"><h6>Quyidagi<a target="_blank" href="https://myaccount.google.com/lesssecureapps"> link </a>orqali emailingizdan xabar yuborish imkoniyatini tasdiqlang.</h6></label>
+            <div class="row">
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Ism:</label>
+                        <input type="text" class="form-control" name="username" />
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">file:</label>
+                        <input type="file" accept = ".pdf" class="form-control" name="file" />
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="fromuser" class="form-label">Kimdan:</label>
+                        <input type="email" class="form-control" name="fromuser" />
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="userpass" class="form-label">Parol:</label>
+                        <input type="password" class="form-control" name="userpass" />
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="touser" class="form-label">Kimga:</label>
+                        <input type="email" class="form-control" name="touser" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="content">Matn:</label>
+                    <textarea name="content" class="form-control" cols="30" rows="10"
+                        placeholder="Matn kiriting..."></textarea>
+
+                    <input style="width: 100px; margin: auto" type="submit" value="Yuborish" name="yuborish"
+                        class="btn btn-danger mt-3" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
